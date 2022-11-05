@@ -14,7 +14,7 @@ public class UserProfileController {
 	@GetMapping("/user/{id}")
 	public ResponseEntity getCustomer(@PathVariable("id") Long id) {
 
-		UserProfile userProfile = new UserProfile(123L, "Parameswara", "Reddy", "pmrreddy@gmail.com", "9505555990");
+		UserProfile userProfile = new UserProfile(123L, "Par", "R", "pmrreddy@xxxXxxxx.com", "1234556");
 		if (userProfile == null) {
 			return new ResponseEntity("No Customer found for ID " + id, HttpStatus.NOT_FOUND);
 		}
